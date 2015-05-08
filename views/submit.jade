@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h2 Submit Your Entry
+	form(action='/formSubmit' method='post')
+		input(name='name' type='text' placeholder='Your Name' )
+		input(name='url' type= 'text' placeholder='Video URL')
+		input(name='title' type='text' placeholder='Video Title')
+		input(name='description' type='text' placeholder='Video Description')
+		input(type='submit')

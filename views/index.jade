@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1 Best Obscure World Music Video
+	ul
+		for video in videoList
+			li
+				a(href='/view/#{video.slug}') #{video.title}
+	a(href='/submit')
+		button Submit a Video Here
