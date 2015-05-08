@@ -17,7 +17,7 @@ app.get('/submit', indexController.submit);
 app.post('/formSubmit', indexController.formSubmit);
 
 console.log("Hello");
-
-var server = app.listen(4798, function() {
+var port = process.env.PORT || 4798;
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
